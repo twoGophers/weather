@@ -6,7 +6,7 @@ name__sites.addEventListener('click',function() {
     const city = input__help.value;  
     let cit = input__help.value;
 
-        fetch('http://api.openweathermap.org/data/2.5/weather?q='+ city +'&appid=f86223118b45e9130f61ec4aace08b5f')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q='+ city +'&appid=f86223118b45e9130f61ec4aace08b5f')
         .then(function (resp) { return resp.json() })
         .then(function (data) {
         console.log(data.name);
@@ -29,7 +29,7 @@ name__sites.addEventListener('click',function() {
 
 });
 
-fetch('http://api.openweathermap.org/data/2.5/forecast?q='+ cit +'&appid=f86223118b45e9130f61ec4aace08b5f')
+fetch('https://api.openweathermap.org/data/2.5/forecast?q='+ cit +'&appid=f86223118b45e9130f61ec4aace08b5f')
 .then(function (res) {return res.json() })
 .then(function(datas) {
 
