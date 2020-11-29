@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(155, 155, 155);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navigation {
+        margin-left: 20%;
+    }
+    .icon_navigation {
+        width: 15%;
+        height: auto;
+        margin-left: 5%;
+        img {
+            width: 20%;
+            
+            background-color: rgb(77, 76, 76);
+            border-radius: 10px;
+            &:hover {
+            transition: 1s;
+            border-radius: 10px;
+            background-color: rgb(220, 220, 224);    
+            }
+            
+        }
+        
+    }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    
+    <link rel="icon" href="Images/Icon/weather.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/bigStyle.css">
+    <link rel="stylesheet" href="Photo/dist/photo.css">
+    <link rel="stylesheet" href="Maps/dist/dist/maps.css">
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div id="logo" class="logo" >
+            <a href="">
+                <h2>{{message1 + message2}}</h2>
+            </a>
+        </div>
+
+
+        <!--Navigation-->
+        <div class="menu__smoll__navigation">
+            <img id="menu__smoll" src="Images/Icon/menu.png"> 
+            <nav class="navigation">
+                <tr>
+                    <a class="menu" onmouseover="" href="index.html" style="color: #309D93;">
+                        <td>Home</td></a>
+                        
+                    
+                    <!--<a id="menu_maps" href="#"><td>Maps</td></a>-->
+                    <a href="Maps.html" class="menu">Maps</a>
+    
+    
+                    <a class="menu" href="photo.html">
+                        <td>Photos</td>
+                    </a>
+                    <a class="menu" href="Video.html">
+                        <td>Video</td>
+                    </a>
+                    <a class="menu" href="News.html">
+                        <td>News</td>
+                    </a>
+                    <a class="menu" href="Contact.html">
+                        <td>Contacts</td>
+                    </a>
+                
+                </tr>
+    
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="photo__image" style="background-image: url('Images/img/sammer.jpg');
+        height: 150px;" >
+    <div class="name__list">
+        <h4>Maps</h4>
+    </div>
+   <div class="block_help">
+    <form class="text-container"
+    style="display: none;">
+        <input type="text"  placeholder="City" required class="input__help" value="" onkeyup="checkInput(this.value)">           
+        <span  id="clearBtn1" class="clearBtn" >
+            <a href="#" class="name__sites" ><img src="Images/Icon/Search_find_locate_1542.ico" alt="icon"></a>
+        </span>
+    </form>
+    </div>   
+</div>
+
+
+
+<div class="maps">
+    <div class="maps__name">
+        <img src="Images/img/flags6.jpg" alt="flag__usa" srcset="">
+        <p>United States</p>
+    </div>
+    <div class="maps__images">
+        <div class="maps__images__states">
+            <img  src="Images/img/temp_map.jpg" alt="United  States Temperature Map" srcset="">
+            <a href="#">United  States Temperature Map</a>
+        </div>
+        <div class="maps__images__states">
+            <img src="Images/img/cloud_map.jpg" alt="United States Cloud Map" srcset="">
+            <a href="#">United States Cloud Map</a>
+        </div>
+        <div class="maps__images__states">
+            <img src="Images/img/weather_map.jpg" alt="United States Weather Map" srcset="">
+            <a href="#">United States Weather Map</a>
+        </div>
+        <div class="maps__images__states">
+            <img src="Images/img/wind_map.jpg" alt="United States Wind Map" srcset="">
+            <a href="#">United States Wind Map</a>
+        </div>
+        <div class="maps__images__states">
+            <img src="Images/img/rain and snow.jpg" alt="United States Rain and Snow" srcset="">
+            <a href="#">United States Rain and Snow</a>
+        </div>
+        <div class="maps__images__states">
+            <img src="Images/img/canada_temp.jpg" alt="Temperature Map" srcset="">
+            <a href="#">Temperature Map</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<footer class="footer" >
+    <nav class="navigation" id="navig">
+        <tr class="menu__footer">
+            <a id="menu" onmouseover="" href="index.html" style="color: #309D93;">
+                <td>Home</td>
+            </a>
+            <!--<a id="menu_maps" href="#"><td>Maps</td></a>-->
+            <a href="Maps.html" id="menu_map">Maps</a>
+
+
+            <a class="menu" href="photo.html">
+                <td>Photos</td>
+            </a>
+            <a class="menu" href="Video.html">
+                <td>Video</td>
+            </a>
+            <a class="menu" href="News.html">
+                <td>News</td>
+            </a>
+            <a class="menu" href="Contact.html">
+                <td>Contacts</td>
+            </a>
+        </tr>
+          <!--Icon-->
+          <div class="icon_navigation">
+              <a href="#"><img src="Images/Icon/facebook.png" alt="facebook" srcset=""></a>
+              <a href="#"><img src="Images/Icon/twitter.png" alt="twitter" srcset=""></a>
+              <a href="#"><img src="Images/Icon/info.png" alt="info" srcset=""></a>
+          </div>
+
+    </nav>
+</footer>
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="Header/Header.css">
+    <script src="Header/Header.js">
+    </script>
+    
+    <link rel="stylesheet" href="Nav/Nav.css">
+    <script src="Nav/Nav.js"></script>
+    
+    <link rel="stylesheet" href="Main/Main.css">
+    <script src="Main/Main.js"></script>
+    
+    <link rel="stylesheet" href="SaitBar/Saitbar.css">
+    
+    
+    <link rel="stylesheet" href="Footer/dist/Footer.css">
+    <script src="Footer/Footer.js"></script>
+    
+    <script src="app.js"></script>
+    <!--API-->
+    
+    <script src="featch.js"></script>
+
+    <link rel="stylesheet" href="Media/dist/media.css">
+    
+    </body>
+    
+    </html>
+    
+    </html>

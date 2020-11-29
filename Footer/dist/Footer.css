@@ -1,0 +1,26 @@
+footer {
+  background-color: #9b9b9b;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .navigation {
+  margin-left: 20%;
+}
+footer .icon_navigation {
+  width: 15%;
+  height: auto;
+  margin-left: 5%;
+}
+footer .icon_navigation img {
+  width: 20%;
+  background-color: #4d4c4c;
+  border-radius: 10px;
+}
+footer .icon_navigation img:hover {
+  transition: 1s;
+  border-radius: 10px;
+  background-color: #dcdce0;
+}

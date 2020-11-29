@@ -1,0 +1,51 @@
+
+
+
+html {
+    background: rgb(221, 219, 219);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    font-family: Verdana,  Tahoma, sans-serif;
+    overflow-x: hidden;
+  }
+
+  a {
+text-decoration: none;
+  }
+
+li {
+  list-style: none;
+}
+  
+hr {
+  border: 0;
+  height: 1px;
+  background: #000;
+  background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+  background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+  background-image: -o-linear-gradient(left, #fff, #000, #fff);
+  }
+
+.clearBtn {
+  position: relative;
+  left: 0;
+  transition: left 0.3s;
+  visibility: hidden;
+}
+
+.show {
+  left: -18px;
+  visibility: visible;
+}
+
+/**/

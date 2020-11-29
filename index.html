@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    
+    <link rel="icon" href="Images/Icon/weather.png" type="">
+    <link rel="stylesheet" href="Style.css" >
+    <link rel="stylesheet" href="SaitBar/dist/SaitBar.css">
+    <link rel="stylesheet" href="dist/bigStyle.css">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div id="logo" >
+            <a href="">
+                <h2>{{message1 + message2}}</h2>
+            </a>
+        </div>
+
+
+
+        <div class="menu__smoll__navigation">
+        <img id="menu__smoll"  src="Images/Icon/menu.png"> 
+        <nav class="navigation">
+            <tr>
+                <a class="menu" onmouseover="" href="index.html" style="color: #309D93;">
+                    <td>Home</td></a>
+                    
+                
+                <!--<a id="menu_maps" href="#"><td>Maps</td></a>-->
+                <a href="Maps.html" class="menu">Maps</a>
+
+
+                <a class="menu" href="photo.html">
+                    <td>Photos</td>
+                </a>
+                <a class="menu" href="Video.html">
+                    <td>Video</td>
+                </a>
+                <a class="menu" href="News.html">
+                    <td>News</td>
+                </a>
+                <a class="menu" href="Contact.html">
+                    <td>Contacts</td>
+                </a>
+            
+            </tr>
+
+        </nav>
+    </div>
+
+    </header>
+
+    <!--
+    <div class="men__mavigaation" for = "navigation1"  >
+        <a class="menu__icon" href="#"> <img  src="Images/Icon/menuIcon.jpg" alt="menu" srcset="" style="height: 50px; display: none;" ></a>
+        
+         <nav class="navigation1" >
+           <ul>
+               <a id="menu" onmouseover="" href="index.html" style="color: rgb(81, 94, 92);">
+                   <li>Home</li>
+               </a>
+               
+               <a class="menu1" href="Maps.html" > <li> Maps</li></a>
+       
+       
+               <a class="menu1" href="photo.html">
+                   <li>Photos</li>
+               </a>
+               <a class="menu1" href="Video.html">
+                   <li>Video</li>
+               </a>
+               <a class="menu1" href="News.html">
+                   <li>News</li>
+               </a>
+               <a class="menu1" href="Contact.html">
+                   <li>Contacts</li>
+               </a>
+           </ul>
+       
+         </nav>
+       </div> 
+
+-->
+
+
+
+
+
+
+    <main>
+
+        <!--Block in images-->
+        <div class="images_bg">
+            <div class="images_block">
+                <div class="block__cites_temp">
+
+                    <div class="block__cites_temp__sites">
+                        <div class="block__cites_temp__sites__sites">
+                            <p class="cites__temp">City</p>
+                            <p class="cites__temp_temp">Temperature</p>
+                        </div>
+                        <div class="block__cites_temp__sites__weather">
+                            <h3 class="Broken "></h3>
+                            <p class="humidity"></p>
+                            <p class="wind"></p>
+                           
+
+                        </div>
+                        
+                    </div>
+                    <div class="block__cites_temp__sites" id="block__cites_temp__sites">
+                        <div class="block__cites_temp__sites__sites">
+                            <p class="cites__temp">City</p>
+                            <p class="cites__temp_icon"></p>
+                        </div>
+                        <div class="block__cites_temp__sites__week__da">
+                        <div class="block__cites_temp__sites__week__days" >
+                            <p class="">SUN </p>
+                            <p class="">MON </p>
+                            <p class="">TUE </p>
+                            <p class="">WED </p>
+                            <p class="">FRI </p>
+                        </div>
+                        <div class="block__cites_temp__sites__week__days" style="margin-left: 10%;">
+                            <p class="SUN">1</p>
+                            <p class="MON">2</p>
+                            <p class="TUE">3</p>
+                            <p class="WED">4</p>
+                            <p class="FRI">5</p>
+                        </div>
+                        <div class="block__cites_temp__sites__week__days img__week">
+                            <p class="">SUN </p>
+                            <p class="">MON </p>
+                            <p class="">TUE </p>
+                            <p class="">WED </p>
+                            <p class="">FRI </p>
+                        </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    
+                </div>
+                <div class="block__menu__help">
+                    <!--Help-->
+                    <div class="block_help">
+                        <form class="text-container">
+                            <input type="text"  placeholder="City" required class="input__help" value="" onkeyup="checkInput(this.value)">           
+                            <span  id="clearBtn1" class="clearBtn" >
+                                <a href="#" class="name__sites" ><img src="Images/Icon/Search_find_locate_1542.ico" alt="icon"></a>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="block_menu">
+                        <a href="#">YESTERDAY</a>
+                        <a href="#">TODAY</a>
+                        <a href="#">HOURLY</a>
+                        <a href="#">TOMORROW</a>
+                        <a href="#">WEEKEND</a>
+                        <a href="#">5 DAY</a>
+                        <a href="#">10 DAY</a>
+                        <a href="#">MONTHLY</a>
+                        <a href="#">VIDEO</a>
+                        <a href="#">MAP</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!--BG - images-->
+            <div class="images_big_bg">
+                <img id="images_big_big" src="Images/img/sammer.jpg">
+            </div>
+        </div>
+    </main>
+
+
+    <!--Saitbar Maps-->
+    <div class="saitbar__maps">
+        <div class="saitbar__map">
+            <div class="saitbar__maps">
+                <img src="Images/img/SLDTvEnStglAq3Yhf-F6iw-article.gif" alt="" srcset="">
+            </div>
+            <div class="saitbar__maps">
+                <img src="Images/img/SLDTvEnStglAq3Yhf-F6iw-article.gif" alt="" srcset="">
+
+          </div>
+            <div class="saitbar__maps">
+                <img src="Images/img/SLDTvEnStglAq3Yhf-F6iw-article.gif" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Video-->
+
+<div class="men__video">
+    <div class="video">
+        <div class="video__block">
+             <div class="video__block__video">
+                <iframe  src="https://www.youtube.com/embed/q1qEXwKAejQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+             <div class="video__block__adress">
+                 <a href="#">Lorem </a>
+             </div>
+             <div class="video__block__content">
+                 <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit culpa eos illum. Iure voluptatem esse magni culpa dignissimos! Unde dignissimos itaque a nisi in. Quae explicabo quia aut repellat accusantium.</p>
+             </div>
+             <div class="video__block__button">
+                 <a class="more" href="#">More</a>
+             </div>
+        </div>     
+        <div class="video__block">
+            <div class="video__block__video">
+                <iframe  src="https://www.youtube.com/embed/q1qEXwKAejQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+            <div class="video__block__adress">
+                <a href="#">Lorem </a>
+            </div>
+            <div class="video__block__content">
+                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit culpa eos illum. Iure voluptatem esse magni culpa dignissimos! Unde dignissimos itaque a nisi in. Quae explicabo quia aut repellat accusantium.</p>
+            </div>
+            <div class="video__block__button">
+                <a class="more" href="#">More</a>
+            </div>
+       </div> 
+    </div>
+    
+   
+
+
+
+    <!--NEWS-->
+    
+        <div class="NEWS">
+            <div class="NEWS__images">
+                <img class="images_news" src="Images/img/1.jpg" alt="pictures">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus dolorem perferendis delectus quos quis reiciendis iure ex assumenda minima. Culpa rem cum optio delectus dolor ducimus! Ullam, mollitia aut.
+                </p>
+            </div>
+            <div class="NEWS__images" id="NEWS__images">
+                <img class="images_news2" src="Images/img/2.jpg" alt="pictures">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus dolorem perferendis delectus quos quis reiciendis iure ex assumenda minima. Culpa rem cum optio delectus dolor ducimus! Ullam, mollitia aut.
+                </p>
+            </div>
+        </div>
+
+
+       
+</div>  
+
+
+<!--information-->
+ <div class="information">
+ <hr style=" width: 100%;" >
+        <div class="information__name">
+            <a href="#">WHAT IS THE NEW DEAL FOR NATURE AND PEOPLE?</a>
+            <p>The New Deal seeks to protect and restore nature for the benefit of people and planet – proposing no more loss of natural spaces or extinctions as well as halving the negative ecological impacts of production and consumption. This will enable us to provide enough food and water for a global population that will grow to nine billion people in coming decades, support efforts to create a stable climate, and prevent a mass extinction of wildlife
+            </p>
+        </div>
+        <div class="information__name">
+            <a href="#">WHY DOES NATURE LOSS MATTER?</a>
+            <p>Nature is our life-support system. From the fresh air we breathe to the clean water we drink, nature provides the essentials we all rely on for our survival and well-being. And it also holds the key to our prosperity, with millions of livelihoods and much of our economic activity also depending on the natural world. These immense benefits to humanity, estimated to be worth around US$125 trillion a year, are only possible if we maintain a rich diversity of wildlife.
+
+            </p>
+        </div>
+        <div class="information__name">
+            <a href="#">OUR PROSPERITY</a>
+            <p>More than 75% of the leading global food crops rely on pollination by insects and other animals. Pollination increases the global value of crop production by US$235-577 billion per year to growers alone. A New Deal will help to challenge threats, such as habitat loss, currently facing pollinators.</p>
+        </div>
+        <div class="information__name">
+            <a href="3">CLIMATE CALAMITY</a>
+            <p>The evidence for the climate crisis is clear.
+                Since the industrial revolution, human activities such as burning fossil fuels, cutting down forests and certain types of livestock farming have released carbon dioxide and other heat-trapping greenhouse gases into the atmosphere. This has already caused the average global temperature to rise by more than 1°C, with levels of greenhouse gases in the atmosphere now higher than they have been at any point in human existence.
+            </p>
+        </div>
+        <div>
+            <a class="more" href="#">More</a>
+         </div>
+    </div>    
+    
+
+    <div class="mic__block">
+        <div class="">
+            <img src="Images/img/photo__6.jpg" alt="" srcset="">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, dolore earum iste amet minima eum nisi ab odio molestias soluta ducimus corporis magnam! Officia quasi nostrum numquam, nulla possimus eum.
+            </p>
+        </div>
+    </div>
+    
+<!--Footer-->
+    
+    <footer class="footer" >
+        <nav class="navigation" id="navig">
+            <tr class="menu__footer">
+                <a id="menu" onmouseover="" href="index.html" style="color: #309D93;">
+                    <td>Home</td>
+                </a>
+                <!--<a id="menu_maps" href="#"><td>Maps</td></a>-->
+                <a href="Maps.html" id="menu_map">Maps</a>
+    
+    
+                <a class="menu" href="photo.html">
+                    <td>Photos</td>
+                </a>
+                <a class="menu" href="Video.html">
+                    <td>Video</td>
+                </a>
+                <a class="menu" href="News.html">
+                    <td>News</td>
+                </a>
+                <a class="menu" href="Contact.html">
+                    <td>Contacts</td>
+                </a>
+            </tr>
+              <!--Icon-->
+              <div class="icon_navigation">
+                  <a href="#"><img src="Images/Icon/facebook.png" alt="facebook" srcset=""></a>
+                  <a href="#"><img src="Images/Icon/twitter.png" alt="twitter" srcset=""></a>
+                  <a href="#"><img src="Images/Icon/info.png" alt="info" srcset=""></a>
+              </div>
+
+        </nav>
+    </footer>
+
+
+
+
+
+    <link rel="stylesheet" href="Header/Header.css">
+    <script src="Header/Header.js"></script>
+    
+
+    <link rel="stylesheet" href="Nav/Nav.css">
+    <script src="Nav/Nav.js"></script>
+
+    <link rel="stylesheet" href="Main/Main.css">
+    <script src="Main/Main.js"></script>
+
+    <link rel="stylesheet" href="SaitBar/Saitbar.css">
+    <script src="SaitBar/SaiBar.js"></script>
+
+    <link rel="stylesheet" href="Footer/dist/Footer.css">
+    <script src="Footer/Footer.js"></script>
+
+    <!--Forma-vue-->
+    
+    <script src="app.js"></script>
+    <!--API-->
+    
+    <script src="featch.js"></script>
+
+    <link rel="stylesheet" href="Media/dist/media.css">
+
+</body>
+
+</html>
+
+</html>

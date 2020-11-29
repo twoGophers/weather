@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    
+    <link rel="icon" href="Images/Icon/weather.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/bigStyle.css">
+    <link rel="stylesheet" href="Photo/dist/photo.css">
+    <link rel="stylesheet" href="News/dist/news.css">
+   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div id="logo" class="logo" >
+            <a href="">
+                <h2>{{message1 + message2}}</h2>
+            </a>
+        </div>
+
+
+    <!--Navigation-->
+        <div class="menu__smoll__navigation">
+            <img id="menu__smoll" src="Images/Icon/menu.png"> 
+            <nav class="navigation">
+                <tr>
+                    <a class="menu" onmouseover="" href="index.html" style="color: #309D93;">
+                        <td>Home</td></a>
+                        
+                    
+                    <!--<a id="menu_maps" href="#"><td>Maps</td></a>-->
+                    <a href="Maps.html" class="menu">Maps</a>
+    
+    
+                    <a class="menu" href="photo.html">
+                        <td>Photos</td>
+                    </a>
+                    <a class="menu" href="Video.html">
+                        <td>Video</td>
+                    </a>
+                    <a class="menu" href="News.html">
+                        <td>News</td>
+                    </a>
+                    <a class="menu" href="Contact.html">
+                        <td>Contacts</td>
+                    </a>
+                
+                </tr>
+    
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+<div class="photo__image" style="background-image: url('Images/img/sammer.jpg');
+        height: 150px;" >
+    <div class="name__list">
+        <h4>News</h4>
+    </div>
+   <div class="block_help">
+    <form class="text-container"
+    style="display: none;">
+        <input type="text"  placeholder="City" required class="input__help" value="" onkeyup="checkInput(this.value)">           
+        <span  id="clearBtn1" class="clearBtn" >
+            <a href="#" class="name__sites" ><img src="Images/Icon/Search_find_locate_1542.ico" alt="icon"></a>
+        </span>
+    </form>
+    </div>  
+</div>
+
+
+<div class="news" id="news__content">
+    <div class="news__name">
+        <h3>WHY DOES NATURE LOSS MATTER?</h3>
+    </div>
+    <div class="news__content">
+        <p>Nature is our life-support system. From the fresh air we breathe to the clean water we drink, nature provides the essentials we all rely on for our survival and well-being. And it also holds the key to our prosperity, with millions of livelihoods and much of our economic activity also depending on the natural world. These immense benefits to humanity, estimated to be worth around US$125 trillion a year, are only possible if we maintain a rich diversity of wildlife.
+
+            We know that we are losing nature faster than it can restore itself. And without urgent action, significant harm to people and planet is inevitable: inadequate food and water for our growing global population, significant harm to our economies, and the mass extinction of an estimated one million species.
+            
+            The world is no stranger to these issues, with governments already pledging action to tackle nature loss through the UN’s global agreement on nature, the Convention on Biological Diversity. But the convention’s targets for 2020, set almost a decade ago, will in all cases not be met.
+            
+            Meanwhile, the warning signs continue to mount. Populations of mammals, birds, reptiles, amphibians and fish have declined on average by 60 per cent in the past 40 years – and 75 per cent of land has been significantly altered by human activities.
+        </p>
+    </div>
+
+    <div>
+        <hr class="lines"></hr>
+    </div>
+    <div class="news__name">
+        <h3>WHAT IS THE NEW DEAL FOR NATURE AND PEOPLE?</h3>
+    </div>
+    <div class="news__content">
+        <p>The New Deal seeks to protect and restore nature for the benefit of people and planet – proposing no more loss of natural spaces or extinctions as well as halving the negative ecological impacts of production and consumption. This will enable us to provide enough food and water for a global population that will grow to nine billion people in coming decades, support efforts to create a stable climate, and prevent a mass extinction of wildlife.
+
+            The first step will be to work with government leaders to ensure their support for a New Deal. This must be followed by strengthened commitments and delivery mechanisms for the UN Biodiversity Convention alongside a strengthened private-sector commitment to action – and then enormous ongoing work in the coming decade. Alongside this, we must redouble efforts to deliver current UN agreements on tackling climate change and encouraging sustainable development – the fate of the climate, human development and nature are linked together.
+        </p>
+    </div>
+</div>
+
+
+
+<footer class="footer" >
+    <nav class="navigation" id="navig">
+        <tr class="menu__footer">
+            <a id="menu" onmouseover="" href="index.html" style="color: #309D93;">
+                <td>Home</td>
+            </a>
+            <!--<a id="menu_maps" href="#"><td>Maps</td></a>-->
+            <a href="Maps.html" id="menu_map">Maps</a>
+
+
+            <a class="menu" href="photo.html">
+                <td>Photos</td>
+            </a>
+            <a class="menu" href="Video.html">
+                <td>Video</td>
+            </a>
+            <a class="menu" href="News.html">
+                <td>News</td>
+            </a>
+            <a class="menu" href="Contact.html">
+                <td>Contacts</td>
+            </a>
+        </tr>
+          <!--Icon-->
+          <div class="icon_navigation">
+              <a href="#"><img src="Images/Icon/facebook.png" alt="facebook" srcset=""></a>
+              <a href="#"><img src="Images/Icon/twitter.png" alt="twitter" srcset=""></a>
+              <a href="#"><img src="Images/Icon/info.png" alt="info" srcset=""></a>
+          </div>
+
+    </nav>
+</footer>
+
+
+
+
+
+<link rel="stylesheet" href="Header/Header.css">
+<script src="Header/Header.js">
+</script>
+
+<link rel="stylesheet" href="Nav/Nav.css">
+<script src="Nav/Nav.js"></script>
+
+<link rel="stylesheet" href="Main/Main.css">
+<script src="Main/Main.js"></script>
+
+<link rel="stylesheet" href="SaitBar/Saitbar.css">
+
+
+<link rel="stylesheet" href="Footer/dist/Footer.css">
+<script src="Footer/Footer.js"></script>
+
+<script src="app.js"></script>
+<!--API-->
+
+<script src="featch.js"></script>
+
+<link rel="stylesheet" href="Media/dist/media.css">
+
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,80 @@
+.Video {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.Video .Video__content__Top-video p {
+  font-size: 1.2em;
+  text-shadow: 2px 2px 3px black;
+  color: #161616;
+  align-items: center;
+  margin-left: 5%;
+}
+.Video .Video__content__videoContent {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  padding: 1%;
+}
+.Video .Video__content__videoContent iframe {
+  min-height: 150px;
+  max-height: 350px;
+  width: 100%;
+  border-radius: 5px;
+}
+.Video .Video__content__videoContent__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+}
+.Video .Video__content__videoContent__text .pass {
+  font-size: 1.2em;
+  text-shadow: 2px 2px 3px black;
+  color: #161616;
+}
+.Video .Video__content__videoContent__text p {
+  color: #424141;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.images__text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 3%;
+}
+.images__text .images__text__backgr {
+  height: 200px;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  min-width: 200px;
+  max-width: 500px;
+  width: 27%;
+  border-radius: 5px;
+  padding: 1%;
+  position: relative;
+  overflow: hidden;
+}
+.images__text .images__text__backgr .images__text__backgr__text {
+  margin-top: 150px;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(52, 53, 53, 0.7) 0 5px 12px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+  border-radius: 10px;
+}
+.images__text .images__text__backgr .images__text__backgr__text:hover {
+  transition: all 3s ease;
+  margin-top: 1%;
+  opacity: 110%;
+}
+.images__text .images__text__backgr p {
+  font-size: 1.1em;
+  text-shadow: 1px 1px 1px white;
+  color: #383838;
+  padding: 2%;
+}

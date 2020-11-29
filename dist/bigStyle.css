@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+
+.block_help {
+  margin: 15% 4% 1% 2%;
+  display: flex;
+  flex-direction: row;
+}
+.block_help form {
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.block_help form:active, .block_help form :hover, .block_help form :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.block_help form input {
+  padding-left: 20px;
+  box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.9);
+  width: auto;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 1.2em;
+}
+.block_help form span {
+  border-radius: 30px;
+  left: -40px;
+}
+
+.block__cites_temp {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.block__cites_temp .block__cites_temp__sites {
+  height: 37%;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 3%;
+  border-radius: 30px;
+  padding: 1%;
+  box-shadow: inset 0px 0px 30px 2px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: row;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__sites {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  width: 50%;
+  height: 80%;
+  font-size: 1.6em;
+  color: #fff;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__sites p {
+  padding-top: 15%;
+  font-size: 1.4em;
+  margin: 0px;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__sites .cites__temp_icon {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__weather {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  padding: 5%;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__weather p, .block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__weather h3 {
+  margin-top: -1%;
+  color: #fff;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__weather h3 {
+  color: #fff;
+  display: flex;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__week__da {
+  margin-left: 7%;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  background-origin: padding-box;
+  width: 30%;
+  margin-right: 5%;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__week__da .block__cites_temp__sites__week__days {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.block__cites_temp .block__cites_temp__sites .block__cites_temp__sites__week__da .block__cites_temp__sites__week__days p {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  padding: 0;
+  margin: 0;
+}
+.block__cites_temp .block__cites_temp__sites .img__week {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.block__cites_temp .block__cites_temp__sites .img__week img {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  margin: 0;
+  height: 90%;
+}
