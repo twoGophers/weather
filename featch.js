@@ -12,7 +12,7 @@ window.onload = () => {
         const city = input__help.value;
 
 
-        fetch('http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=f86223118b45e9130f61ec4aace08b5f')
+        fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=f86223118b45e9130f61ec4aace08b5f')
             .then(function (resp) {
                 return resp.json()
             })
