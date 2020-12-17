@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="dist/bigStyle.css">
     <link rel="stylesheet" href="Photo/dist/photo.css">
-    <link rel="stylesheet" href="Maps/dist/dist/maps.css">
+    <link rel="stylesheet" href="Maps/dist/mapsIndex.css">
     
-    
+    <script defer src="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.min.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -81,37 +81,36 @@
 </div>
 
 
-
+<!--Maps of Maps.index-->
 <div class="maps">
-    <div class="maps__name">
-        <img src="Images/img/flags6.jpg" alt="flag__usa" srcset="">
-        <p>United States</p>
+    <div class="maps__content">
+        <h3 class="maps__content"> </h3>
     </div>
     <div class="maps__images">
         <div class="maps__images__states">
-            <img  src="Images/img/temp_map.jpg" alt="United  States Temperature Map" srcset="">
-            <a href="#">United  States Temperature Map</a>
+            <div id="map1"></div>
         </div>
+
         <div class="maps__images__states">
-            <img src="Images/img/cloud_map.jpg" alt="United States Cloud Map" srcset="">
-            <a href="#">United States Cloud Map</a>
+            <div id="map2"></div>
         </div>
+
         <div class="maps__images__states">
-            <img src="Images/img/weather_map.jpg" alt="United States Weather Map" srcset="">
-            <a href="#">United States Weather Map</a>
+            <div id="map3"></div>
         </div>
+
         <div class="maps__images__states">
-            <img src="Images/img/wind_map.jpg" alt="United States Wind Map" srcset="">
-            <a href="#">United States Wind Map</a>
+            <div id="map4"></div>
         </div>
+
         <div class="maps__images__states">
-            <img src="Images/img/rain and snow.jpg" alt="United States Rain and Snow" srcset="">
-            <a href="#">United States Rain and Snow</a>
+            <div id="map5"></div>
         </div>
+
         <div class="maps__images__states">
-            <img src="Images/img/canada_temp.jpg" alt="Temperature Map" srcset="">
-            <a href="#">Temperature Map</a>
+            <div id="map6"></div>
         </div>
+
     </div>
 </div>
 
@@ -176,7 +175,7 @@
     <script src="app.js"></script>
     <!--API-->
     
-    <script src="featch.js"></script>
+    <script src="featchMaps.js"></script>
 
     <link rel="stylesheet" href="Media/dist/media.css">
     
