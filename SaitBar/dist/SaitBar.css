@@ -17,10 +17,6 @@
   height: auto;
   width: 100%;
 }
-.saitbar__maps .saitbar__map .saitbar__maps :hover {
-  border: 2px solid #fff;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
 
 .men__video {
   display: flex;
