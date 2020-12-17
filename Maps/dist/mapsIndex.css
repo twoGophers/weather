@@ -1,0 +1,66 @@
+.saitbar__maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+  border: 1px solid #949393;
+  border-radius: 5px;
+}
+.saitbar__maps .mapsIndex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.saitbar__maps .mapsIndex #map {
+  z-index: 1;
+  width: 47%;
+  height: 300px;
+  margin: 1%;
+}
+.saitbar__maps .mapsIndex #maps {
+  z-index: 1;
+  width: 47%;
+  height: 300px;
+  margin: 1%;
+}
+
+.maps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maps .maps__content {
+  margin-top: 2%;
+}
+.maps .maps__images {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+  margin: 1%;
+}
+.maps .maps__images .maps__images__states {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.maps .maps__images .maps__images__states #map1, .maps .maps__images .maps__images__states #map2, .maps .maps__images .maps__images__states #map3, .maps .maps__images .maps__images__states #map4, .maps .maps__images .maps__images__states #map5, .maps .maps__images .maps__images__states #map6 {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+
+.name__list {
+  margin-left: 5%;
+}
