@@ -30,7 +30,7 @@ window.onload = () => {
 
 
                     //fetch по координатам города
-                    fetch('http://api.openweathermap.org/data/2.5/forecast?q='+response.location.data.city+'&appid=f86223118b45e9130f61ec4aace08b5f')
+                    fetch('https://api.openweathermap.org/data/2.5/forecast?q='+response.location.data.city+'&appid=f86223118b45e9130f61ec4aace08b5f')
                     .then(function (resp) { return resp.json() })
                     .then(function (data) {
 
