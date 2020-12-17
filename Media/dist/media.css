@@ -47,14 +47,32 @@
     width: 90%;
   }
 
-  .saitbar__maps {
-    margin: 0;
-  }
-
   .mic__block {
     margin-top: 200%;
     max-width: 29%;
     min-width: 33%;
+  }
+
+  .maps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .maps .maps__images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .maps .maps__images .maps__images__states {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps .maps__images .maps__images__states #map1, .maps .maps__images .maps__images__states #map2, .maps .maps__images .maps__images__states #map3, .maps .maps__images .maps__images__states #map4, .maps .maps__images .maps__images__states #map5, .maps .maps__images .maps__images__states #map6 {
+    width: 70%;
+    height: 400px;
   }
 }
 @media screen and (max-width: 880px) {
@@ -62,6 +80,11 @@
     margin-top: 210%;
     max-width: 29%;
     min-width: 38%;
+  }
+
+  .mapsIndex {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 850px) {
@@ -113,15 +136,34 @@
   .mic__block {
     display: none;
   }
-}
-@media screen and (max-width: 820px) {
-  .saitbar__maps {
+
+  .maps {
     display: flex;
     flex-direction: column;
-    margin: 2%;
-    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-
+  .maps .maps__images {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps .maps__images .maps__images__states {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps .maps__images .maps__images__states #map1, .maps .maps__images .maps__images__states #map2, .maps .maps__images .maps__images__states #map3, .maps .maps__images .maps__images__states #map4, .maps .maps__images .maps__images__states #map5, .maps .maps__images .maps__images__states #map6 {
+    width: 90%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 820px) {
   .men__video {
     display: flex;
     flex-direction: column;
@@ -306,7 +348,7 @@
     align-items: center;
   }
   .photo__image .name__list {
-    display: none;
+    margin: 0;
   }
   .photo__image .block_help {
     margin-left: 60px;
@@ -315,11 +357,42 @@
     width: 200px;
   }
 
-  .maps__images {
-    width: 100%;
+  .mapsIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
-  .maps__images .maps__images__states {
-    border-radius: 10px;
+  .mapsIndex #map, .mapsIndex #maps {
+    min-width: 95%;
+  }
+
+  .maps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps .maps__images {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps .maps__images .maps__images__states {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps .maps__images .maps__images__states #map1, .maps .maps__images .maps__images__states #map2, .maps .maps__images .maps__images__states #map3, .maps .maps__images .maps__images__states #map4, .maps .maps__images .maps__images__states #map5, .maps .maps__images .maps__images__states #map6 {
+    width: 90%;
+    height: 400px;
+    margin-bottom: 3%;
   }
 }
 @media screen and (max-width: 580px) {
@@ -333,10 +406,6 @@
 
   a {
     box-shadow: none;
-  }
-
-  .saitbar__maps {
-    display: none;
   }
 
   .men__video {
@@ -367,5 +436,14 @@
   }
   .images__text .images__text__backgr {
     width: 100%;
+  }
+
+  .mapsIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mapsIndex #map, .mapsIndex #maps {
+    min-width: 100%;
   }
 }
